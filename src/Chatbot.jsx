@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY;
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
